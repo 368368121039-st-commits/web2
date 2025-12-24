@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rittikorn Suknil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --dark-color: #2d3436;
+            --light-color: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Kanit';
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -50px auto 50px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--primary-color); border-left: 5px solid var(--primary-color); padding-left: 15px; margin-bottom: 20px; }
+        
+        .info-list { list-style: none; }
+        .info-list li { margin-bottom: 10px; display: flex; align-items: center; }
+        .info-list li i { width: 30px; color: var(--primary-color); }
+
+        .tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .external-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ฤทธิกร สุขนิล (Rittikorn Suknil)</h1>
+    <p>นักศึกษา ปวช. คอมพิวเตอร์ | Friendly & Creative</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h2><i class="fas fa-user"></i> ข้อมูลส่วนตัว</h2>
+            <ul class="info-list">
+                <li><i class="fas fa-birthday-cake"></i> <strong>อายุ:</strong> 18 ปี</li>
+                <li><i class="fas fa-arrows-alt-v"></i> <strong>สัดส่วน:</strong> สูง 180 ซม. | หนัก 80 กก.</li>
+                <li><i class="fas fa-venus-mars"></i> <strong>เพศ:</strong> LGBTQ</li>
+                <li><i class="fas fa-home"></i> <strong>ที่อยู่:</strong> 24 หมู่ 4 ต.โคกช้าง อ.เดิมบางนางบวช จ.สุพรรณบุรี</li>
+                <li><i class="fas fa-users"></i> <strong>ครอบครัว:</strong> สมาชิก 5 คน (มีพี่น้อง 2 คน)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-graduation-cap"></i> การศึกษา</h2>
+            <p><strong>โรงเรียนธรรมโชติศึกษาลัย</strong></p>
+            <p>สายการเรียน: ปวช. คอมพิวเตอร์</p>
+            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+            <div class="external-links">
+                <a href="https://rmutsb.ac.th/" target="_blank"><i class="fas fa-university"></i> มหาวิทยาลัยราชมงคลสุวรรณภูมิ</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><i class="fas fa-star"></i> ประสบการณ์และความสามารถ</h2>
+        <p><strong>ความโดดเด่น:</strong> มีทักษะด้านการทำอาหารและการขายของ สามารถดึงดูดและเข้าหาลูกค้าเป้าหมายได้ดี </p>
+        <div style="margin-top: 15px;">
+            <span class="tag">ทำอาหารอร่อย</span>
+            <span class="tag">การขายออนไลน์</span>
+            <span class="tag">การตลาด</span>
+            <span class="tag">Friendly</span>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2><i class="fas fa-heart"></i> ไลฟ์สไตล์ & งานอดิเรก</h2>
+            <ul class="info-list">
+                <li><i class="fas fa-gamepad"></i> เล่นเกมส์ & สตรีมเกมส์</li>
+                <li><i class="fas fa-utensils"></i> ทำอาหาร</li>
+                <li><i class="fas fa-smile"></i> นิสัย: ร่าเริง เข้าหาคนง่าย</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-lightbulb"></i> บุคคลต้นแบบ</h2>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span class="tag" style="background: #ff7675;">เชฟป้อม</span>
+                <span class="tag" style="background: #0984e3;">พี่แป้ง (Zbing z.)</span>
+            </div>
+            <p style="margin-top: 10px; font-size: 0.9rem;">ความสนใจ: การแข่งทำอาหารและการสตรีมเกมส์ </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Rittikorn Suknil. Created for Portfolio.</p>
+    </div>
+</div>
+
+</body>
+</html>

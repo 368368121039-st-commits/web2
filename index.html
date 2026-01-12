@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-   <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
     <meta charset="UTF-8">
     <title>ประวัติส่วนตัว | ฤทธิกร สุขนิล</title>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Prompt', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
             margin: 0;
-            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
             overflow: hidden;
         }
 
         .header {
             background: #6a11cb;
-            color: #fff;
-            padding: 30px;
+            color: white;
             text-align: center;
+            padding: 40px 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            margin-bottom: 15px;
         }
 
         .header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        .header p {
-            margin: 8px 0 0;
-            font-size: 18px;
+            margin: 10px 0 5px;
         }
 
         .content {
@@ -47,7 +48,7 @@
         }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .section h2 {
@@ -57,37 +58,47 @@
             margin-bottom: 15px;
         }
 
-        .section p,
-        .section li {
-            font-size: 16px;
+        .section p {
             line-height: 1.8;
         }
 
-        ul {
-            padding-left: 20px;
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
-        .highlight {
-            background: #f4f0ff;
-            padding: 15px;
-            border-radius: 10px;
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
         }
 
-        .footer {
-            background: #f1f1f1;
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .gallery-item p {
             text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
-
-        a {
-            color: #2575fc;
-            text-decoration: none;
+            padding: 12px;
+            background: #f4f0ff;
+            color: #6a11cb;
             font-weight: 500;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .footer {
+            text-align: center;
+            background: #f1f1f1;
+            padding: 15px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -96,94 +107,46 @@
 <div class="container">
 
     <div class="header">
-        <h1>ประวัติส่วนตัว</h1>
-        <p>ฤทธิกร สุขนิล</p>
+        <img src="img_girl.jpg" alt="รูปโปรไฟล์" class="profile-img">
+        <h1>ฤทธิกร สุขนิล</h1>
+        <p>นักศึกษา ปวช. คอมพิวเตอร์</p>
     </div>
 
     <div class="content">
 
         <div class="section">
-            <h2>ข้อมูลทั่วไป</h2>
+            <h2>ข้อมูลส่วนตัว</h2>
             <p>
-                ชื่อ: ฤทธิกร สุขนิล <br>
-                อายุ: 18 ปี <br>
-                น้ำหนัก: 80 กก. | ส่วนสูง: 180 ซม. <br>
-                เพศ: LGBTQ
+                อายุ 18 ปี | ส่วนสูง 180 ซม. | น้ำหนัก 80 กก.<br>
+                เป็นคนร่าเริง Friendly เข้าหาคนง่าย
             </p>
         </div>
 
         <div class="section">
-            <h2>ที่อยู่ & การติดต่อ</h2>
-            <p>
-                ที่อยู่: 24 หมู่ 4 ต.โคกช้าง อ.เดิมบางนางบวช จ.สุพรรณบุรี 72120 <br>
-                โทรศัพท์: 098-026-2073 <br>
-                IG: rittikron098 <br>
-                Facebook: SaYoNaRa
-            </p>
-        </div>
+            <h2>ผลงาน & กิจกรรมที่สนใจ</h2>
 
-        <div class="section">
-            <h2>การศึกษา</h2>
-            <p>
-                สำเร็จการศึกษาจากโรงเรียนธรรมโชติศึกษาลัย <br>
-                สาย ปวช. คอมพิวเตอร์
-            </p>
-        </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="0004.jpg" alt="การทำอาหาร">
+                    <p>ความสามารถพิเศษ: การทำอาหาร</p>
+                </div>
 
-        <div class="section highlight">
-            <h2>ลักษณะนิสัย & ความสนใจ</h2>
-            <p>
-                เป็นคนร่าเริง Friendly เข้าหาคนง่าย <br>
-                งานอดิเรก: เล่นเกมส์, ทำอาหาร <br>
-                ความสามารถพิเศษ: ทำอาหารอร่อย
-            </p>
-        </div>
+                <div class="gallery-item">
+                    <img src="0005.jpg" alt="การแข่งขันวอลเลย์บอล">
+                    <p>การแข่งขันวอลเลย์บอล</p>
+                </div>
 
-        <div class="section">
-            <h2>ประสบการณ์ & ความสามารถ</h2>
-            <ul>
-                <li>เคยขายอาหารตามสั่ง และแซนวิสในโรงเรียน</li>
-                <li>ฝึกงานที่ อบต.โคกช้าง</li>
-                <li>ใช้เครื่องปริ้น รับ-ส่งเอกสารได้</li>
-                <li>ถ่ายภาพด้วยมุมกล้องได้</li>
-                <li>ชงกาแฟสำหรับผู้เข้าประชุม</li>
-                <li>สามารถทำงานได้หลากหลาย เช่น ขับรถใหญ่ หาปลา เลี้ยงสัตว์</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>รางวัล & เกียรติบัตร</h2>
-            <ul>
-                <li>นักเรียนออมเกม</li>
-                <li>เยาวชนคนดีศรีธรรมโชติ</li>
-                <li>นักเรียนดีเด่น</li>
-                <li>แข่งขันวอลเลย์บอลได้อันดับ 1 ของคณะสี</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>ข้อมูลเพิ่มเติม</h2>
-            <p>
-                บุคคลต้นแบบ: เชฟป้อม, พี่แป้ง <br>
-                อาหารที่ชอบ: กระเพราหมูกรอบ <br>
-                สีที่ชอบ: สีม่วง <br>
-                สัตว์ที่ชอบ: ปลาชนิดต่าง ๆ
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>เว็บไซต์ที่เกี่ยวข้อง</h2>
-            <p>
-                <a href="https://rmutsb.ac.th/" target="_blank">
-                    มหาวิทยาลัยราชมงคลสุวรรณภูมิ
-                </a>
-            </p>
+                <div class="gallery-item">
+                    <img src="img_girl.jpg" alt="กิจกรรมทั่วไป">
+                    <p>กิจกรรมและประสบการณ์ชีวิต</p>
+                </div>
+            </div>
         </div>
 
     </div>
 
     <div class="footer">
-        © 2026 | Personal Profile Website
+        © 2026 | Personal Portfolio Website
     </div>
 
 </div>
